@@ -1,0 +1,336 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+@font-face { font-family: AmericanTypewriter; src: url(../fonts/'AmericanTypewriter-MediumA.otf'); } 
+@font-face { font-family: LetterGothic; src: url(../fonts/'LetterGothic.otf'); } 
+@font-face { font-family: Questrial; src: url(../fonts/'Questrial-Regular.ttf'); } 
+
+
+
+/* ////////////////////////// Basic ////////////////////////////// */
+ol, ul {
+	list-style: none;
+}
+
+body{
+	font-family: "Helvetica Neue";
+
+}
+
+
+header{
+	height: 35px;
+	background: #ed1fab;
+}
+
+nav{
+	height: 35px;
+	background: #ed1fab;
+}
+
+
+nav a{
+	text-decoration: none;
+	color: #fff;
+	padding: 10px 10px 2px 10px;
+	line-height: 35px;
+}
+nav a:hover{
+	border-bottom: solid 2px;
+}
+
+.wrapper{
+/* 	width: 950px; */
+	line-height: 1;
+/* 	margin: 0 auto; */
+	padding-left: 10px;
+}
+
+h1{
+	font-size: 100px;	
+}
+article{
+	font-family: Questrial;
+}
+
+p.titlebg{
+	height: 20px;
+	margin-top: -25px;
+	background: url(../img/bg-lines.png);
+	margin-bottom: 55px;
+}
+
+/* ////////////////////////// Page Layouts ////////////////////////////// */
+section.articles{
+	width: 60%;
+	float: left;
+}
+aside.sidebar{
+	width: 30%;
+	float: right;
+}
+h2.article-title{
+	width: 73%;
+	float: left;
+	font-family: Lekton;
+	font-size: 36px;
+	padding-top: 10px;
+	padding-left: 2%;
+}
+
+/* ////////////////////////// Images Page  ////////////////////////////// */
+h2.imagebox{
+	margin: 0 auto;
+	text-align: center;
+}
+ul.backnext li a#back, ul.backnext li a#next{
+	cursor: pointer;
+}
+ul li a#back{
+	cursor: hand;
+	
+}
+html body section aside.images ul li{
+	width: 75px;
+	height: 75px;
+	margin: 3px;
+	float: left;
+	
+	
+}
+html body section aside.images ul li a{
+	width: 75px;
+	height: 75px;
+	display: block;
+	border: solid 3px #fff;
+}
+
+html body section aside.images ul li a.active{
+	border: solid 3px #16d0eb;
+}
+
+html body section aside.images ul li a:hover{
+	border: solid 3px #16d0eb;
+}
+article h3{
+	width: 23%;
+	float: right;
+	text-align: right;
+	padding-right: 2%;
+	padding-top: 10px;
+	
+}
+article ul{
+	clear: both;
+	border-top: solid 2px;
+	margin-top: 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-style: italic;
+	padding-left: 2%;
+}
+article ul li a{
+	text-decoration: none;
+	color: #ff5b02;
+}
+article ul li{
+	display: inline-block;
+}
+article ul li:first-child{
+	width: 82%;
+}
+article ul.backnext li{
+	display: inline-block;
+	width: 49%;
+	text-align: right;
+}
+article ul.backnext li:first-child{
+	text-align: left;
+}
+article p{
+	font-size: 13px;
+	padding: 2%;
+	line-height: 1.2;
+}
+aside h2{
+	margin-top: 80px;
+	font-family: AmericanTypewriter;
+	font-size: 54px;
+}
+
+/* ////////////////////////// Blog Page  ////////////////////////////// */
+aside.blogs{
+	margin-top: -120px;
+	font-family: Questrial;
+	font-size: 24px;
+	line-height: 1.2;
+}
+aside.blogs a{
+	text-decoration: none;
+	color: #16d0eb;
+	font-family: Questrial;
+}
+aside.blogs a:hover{
+	border-bottom: 1px solid #16d0eb;
+}
+
+section.image-section{
+	width: 60%;
+}
+html body section aside.images{
+	margin: 0 auto;
+	width: 30%;
+}
+/*
+h2.imagebox{
+	height: 333px;
+	width: 500px;
+}
+*/
+
+
+
+/* ////////////////////////// Forms  ////////////////////////////// */
+
+
+
+
+form#register-form fieldset ol li{
+	padding: 5px 0 5px 0;
+}
+
+form#register-form fieldset ol li.left{
+	width: 240px;
+	float: left;
+	clear: left;
+}
+
+form#register-form fieldset ol li.right{
+	width: 240px;
+	float: left;
+}
+form#register-form fieldset ol li input{
+	height: 25px;
+	width: 230px;
+}
+
+form#register-form fieldset ol li span{
+	padding: 3px 0 0 5px;
+	font-size: 11px;
+	font-style: italic;
+	color: #B53131;
+	display: none;
+}
+form#register-form fieldset ol li span.error{
+	display: block;
+}
+form#register-form #submitbtn{
+	background: #666;
+	width: 120px;
+	border: none;
+	color: #fff;
+	font-size: 20px;
+	height: 35px;
+}
+form#register-form #submitbtn.enabled{
+	background: #9add0c;
+	width: 120px;
+	border: none;
+	color: #fff;
+	font-size: 20px;
+	height: 35px;
+}
+form#register-form input, form#register-form textarea{
+	background: #f0f0f0;
+	border-radius: 5px;
+	border: solid 1px #bcbcbc;
+}
+
+form#register-form input.error{
+	border: solid 1px #B53131;
+	outline-color: #B53131;
+}
+form#register-form input.valid{
+	border: solid 1px #9add0c;
+	outline-color: #9add0c;
+}
+
+form input{
+	background: #f0f0f0;
+	border-radius: 5px;
+	border: solid 1px #bcbcbc;
+
+}
+form#blogsearch button#submitbtn{
+	background: url(../img/search.png) no-repeat;
+	text-indent: -9999px;
+	height: 17px;
+	width: 17px;
+	border: none;
+	cursor: pointer;
+}
+/*html body section.wrapper section#autocomplete section#autoitem*/
+section.autoitem{
+	background: #F4DECD;
+	padding: 3px 5px;
+	width: 234px;
+	border-bottom: dashed 1px #bcbcbc;
+}
+section.on{
+	background: #ffe2e2;
+}
+section.autoitem h3, section.autoitem p.friends{
+	color: #474843;
+	line-height: 1.2;
+	font-size: 12px;
+}
+section.autoitem p{
+	color: #ff5b02;
+	line-height: 1.2;
+}
+section.autoitem h3.name{
+	font-size: 11px;
+}
+section.autoitem p.friends{
+	font-size: 12px;
+	font-style: italic;
+}
+
+#box{
+	width:100px;
+	height:100px;
+	background-color:#00f;
+	position: relative;
+}
+section#accordion{
+	width:60%;
+}
+.content{
+	padding-top: 10px;
+	padding-bottom:10px;
+	height: 150px;
+
+}
