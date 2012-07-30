@@ -18,7 +18,7 @@
 require_once("models/viewModel.php");
 
 $views = new viewModel();
-
+<p>banana</p>
 $views->getView("views/header.html");
 $views->getView("views/blogs.html");
 $views->getView("views/footer.html");
